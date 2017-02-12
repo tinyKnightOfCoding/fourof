@@ -1,4 +1,4 @@
-package ch.tkoc.fourof.fx.view
+package ch.tkoc.fx
 
 import org.springframework.context.annotation.Scope
 import org.springframework.stereotype.Component

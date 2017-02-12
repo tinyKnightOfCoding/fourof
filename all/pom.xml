@@ -20,6 +20,7 @@
     <modules>
         <module>../fxclient</module>
         <module>../client</module>
+        <module>../springfx</module>
     </modules>
 
     <properties>
@@ -72,6 +73,11 @@
             <dependency>
                 <groupId>ch.tkoc</groupId>
                 <artifactId>client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.tkoc</groupId>
+                <artifactId>springfx</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>

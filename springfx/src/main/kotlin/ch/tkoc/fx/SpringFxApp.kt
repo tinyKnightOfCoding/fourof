@@ -1,6 +1,6 @@
-package ch.tkoc.fourof.fx
+package ch.tkoc.fx
 
-import ch.tkoc.fourof.fx.view.View
+import ch.tkoc.fx.View
 import javafx.stage.Stage
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.ApplicationContext

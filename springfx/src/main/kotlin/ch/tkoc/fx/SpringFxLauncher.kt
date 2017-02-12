@@ -1,4 +1,4 @@
-package ch.tkoc.fourof.fx
+package ch.tkoc.fx
 
 import javafx.application.Application
 import javafx.stage.Stage
@@ -11,15 +11,15 @@ class SpringFxLauncher : Application() {
         var basePackages: String? = null
 
         fun launch(basePackages: String) {
-            SpringFxLauncher.basePackages = basePackages
-            Application.launch(SpringFxLauncher::class.java)
+            Companion.basePackages = basePackages
+            launch(SpringFxLauncher::class.java)
         }
     }
 
 
     override fun start(primaryStage: Stage) {
-        SpringFxLauncher.primaryStage = primaryStage
-        val context = AnnotationConfigApplicationContext(SpringFxLauncher.basePackages!!)
+        Companion.primaryStage = primaryStage
+        val context = AnnotationConfigApplicationContext(basePackages!!)
         println("context initialized: ")
         context.beanDefinitionNames.forEach { println("- $it") }
     }

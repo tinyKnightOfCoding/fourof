@@ -1,4 +1,4 @@
-package ch.tkoc.fourof.fx.view
+package ch.tkoc.fx
 
 import javafx.scene.layout.Pane
 import org.junit.Test

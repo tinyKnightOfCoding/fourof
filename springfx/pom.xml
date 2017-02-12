@@ -9,20 +9,13 @@
         <relativePath>../all/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>fx-client</artifactId>
-    <packaging>jar</packaging>
+
+    <artifactId>springfx</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>ch.tkoc</groupId>
-            <artifactId>client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>ch.tkoc</groupId>
-            <artifactId>springfx</artifactId>
         </dependency>
     </dependencies>
 </project>

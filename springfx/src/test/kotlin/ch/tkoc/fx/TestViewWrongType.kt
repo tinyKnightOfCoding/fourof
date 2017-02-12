@@ -1,5 +1,6 @@
-package ch.tkoc.fourof.fx.view
+package ch.tkoc.fx
 
+import ch.tkoc.fx.View
 import javafx.scene.Node
 import javafx.scene.control.ListView
 import javafx.stage.Stage
