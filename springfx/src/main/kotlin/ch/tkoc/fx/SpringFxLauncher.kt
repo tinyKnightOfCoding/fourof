@@ -6,12 +6,13 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 class SpringFxLauncher : Application() {
 
+
     companion object {
         var primaryStage: Stage? = null
-        var basePackages: String? = null
+        var basePackage: String? = null
 
-        fun launch(basePackages: String) {
-            Companion.basePackages = basePackages
+        fun launch(basePackage: String) {
+            Companion.basePackage = basePackage
             launch(SpringFxLauncher::class.java)
         }
     }
@@ -19,8 +20,7 @@ class SpringFxLauncher : Application() {
 
     override fun start(primaryStage: Stage) {
         Companion.primaryStage = primaryStage
-        val context = AnnotationConfigApplicationContext(basePackages!!)
-        println("context initialized: ")
+        val context = AnnotationConfigApplicationContext("ch.tkoc.fx", SpringFxLauncher.basePackage)
         context.beanDefinitionNames.forEach { println("- $it") }
     }
 
