@@ -9,8 +9,7 @@ import org.springframework.stereotype.Component
 @Component
 class SpringFxApp @Autowired constructor(private val applicationContext: ApplicationContext) {
 
-    private val application: AppFx = AppFx()
-    private val primaryStage: Stage = application.createStage()
+    private val primaryStage: Stage = SpringFxLauncher.primaryStage!!
 
     fun switchToViewBean(beanName: String) {
         val bean = applicationContext.getBean(beanName)
