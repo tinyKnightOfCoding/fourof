@@ -4,7 +4,7 @@ import org.springframework.beans.factory.config.BeanPostProcessor
 import org.springframework.stereotype.Component
 
 @Component
-class SpringFxViewInitializer : BeanPostProcessor {
+class SpringFxViewProcessor : BeanPostProcessor {
 
     override fun postProcessAfterInitialization(bean: Any, beanName: String): Any {
         println("after $beanName")

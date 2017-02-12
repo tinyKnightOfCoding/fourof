@@ -13,7 +13,7 @@ class SpringFxLauncher : Application() {
 
         fun launch(basePackage: String) {
             Companion.basePackage = basePackage
-            launch(SpringFxLauncher::class.java)
+//            launch(SpringFxLauncher::class.java)
         }
     }
 
