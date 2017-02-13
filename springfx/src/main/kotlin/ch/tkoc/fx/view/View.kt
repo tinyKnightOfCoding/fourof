@@ -1,4 +1,4 @@
-package ch.tkoc.fx
+package ch.tkoc.fx.view
 
 import javafx.fxml.FXMLLoader
 import javafx.scene.Node

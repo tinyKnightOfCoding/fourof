@@ -1,4 +1,4 @@
-package ch.tkoc.fx
+package ch.tkoc.fx.annotation
 
 import org.springframework.context.annotation.Scope
 import org.springframework.stereotype.Component

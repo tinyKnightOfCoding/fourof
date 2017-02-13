@@ -1,12 +1,11 @@
 package ch.tkoc.fx
 
-import org.springframework.context.annotation.Bean
+import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
-import javax.annotation.Resource
+import org.springframework.context.annotation.EnableAspectJAutoProxy
 
+//TODO fix entry point
 @Configuration("ch.tkoc.fx.springFxConfiguration")
-class SpringFxConfiguration(@Resource(name="\${springfx.initial}") val initialView: View) {
-
-    val springFxApp: SpringFxApp
-        @Bean("ch.tkoc.fx.springFxApp") get() = SpringFxApp(initialView)
-}
+@EnableAspectJAutoProxy
+@ComponentScan("ch.tkoc.fx")
+class SpringFxConfiguration

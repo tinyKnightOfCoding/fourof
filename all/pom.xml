@@ -32,6 +32,7 @@
         <spring.version>5.0.0.M4</spring.version>
         <mockito.version>1.10.19</mockito.version>
         <project.version>1.0-SNAPSHOT</project.version>
+        <aspectj.version>1.8.10</aspectj.version>
     </properties>
 
     <dependencies>
@@ -79,6 +80,16 @@
                 <groupId>ch.tkoc</groupId>
                 <artifactId>springfx</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjrt</artifactId>
+                <version>${aspectj.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectj.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

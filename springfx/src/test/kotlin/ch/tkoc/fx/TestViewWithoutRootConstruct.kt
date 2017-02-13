@@ -1,6 +1,6 @@
 package ch.tkoc.fx
 
-import ch.tkoc.fx.View
+import ch.tkoc.fx.view.View
 import javafx.scene.image.ImageView
 import javafx.scene.layout.Pane
 import javafx.stage.Stage

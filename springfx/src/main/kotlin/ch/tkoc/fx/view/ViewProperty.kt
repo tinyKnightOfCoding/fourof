@@ -1,4 +1,4 @@
-package ch.tkoc.fx
+package ch.tkoc.fx.view
 
 import javafx.scene.Node
 import kotlin.reflect.KProperty

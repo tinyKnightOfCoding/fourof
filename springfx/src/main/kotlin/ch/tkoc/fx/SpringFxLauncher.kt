@@ -24,5 +24,6 @@ class SpringFxLauncher : Application() {
     override fun start(primaryStage: Stage) {
         ch.tkoc.fx.primaryStage = primaryStage
         applicationContext = AnnotationConfigApplicationContext(customConfigClass, SpringFxConfiguration::class.java)
+        applicationContext!!.beanDefinitionNames.forEach { println("- $it") }
     }
 }
