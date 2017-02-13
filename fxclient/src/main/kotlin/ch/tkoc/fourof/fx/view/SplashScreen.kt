@@ -7,7 +7,7 @@ import javafx.scene.Scene
 import javafx.scene.layout.Pane
 import javafx.stage.Stage
 
-@FxView(initial = true)
+@FxView
 class SplashScreen : View() {
 
     val root: Pane by fxml()
